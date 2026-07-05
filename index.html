@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanban Task Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Kanban Task Manager</h1>
+  <nav>
+    <a href="index.html" class="active">Board</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main>
+  <form id="task-form">
+    <input type="text" id="task-input" placeholder="Enter a new task..." required>
+    <select id="task-column">
+      <option value="todo">To Do</option>
+      <option value="inprogress">In Progress</option>
+      <option value="done">Done</option>
+    </select>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <div class="board">
+    <section class="column" data-column="todo">
+      <h2>To Do <span class="count" id="todo-count">0</span></h2>
+      <div class="task-list" id="todo-list"></div>
+    </section>
+
+    <section class="column" data-column="inprogress">
+      <h2>In Progress <span class="count" id="inprogress-count">0</span></h2>
+      <div class="task-list" id="inprogress-list"></div>
+    </section>
+
+    <section class="column" data-column="done">
+      <h2>Done <span class="count" id="done-count">0</span></h2>
+      <div class="task-list" id="done-list"></div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <p>CSE 479 - Web Programming Assignment</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
