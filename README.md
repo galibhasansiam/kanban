@@ -4,7 +4,7 @@ A simple Kanban-style task manager built with plain HTML, CSS, and JavaScript.
 Made for the CSE 479 (Web Programming) assignment.
 
 ## Live Demo
-https://YOUR_USERNAME.github.io/kanban-task-manager/
+https://galibhasansiam.github.io/kanban/
 
 ## Features
 - Add, edit, and delete tasks
